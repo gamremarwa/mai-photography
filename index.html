@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mai Photography | مي فوتوغرافي</title>
+<meta name="description" content="Mai Photography · مي فوتوغرافي: portraits, weddings, newborns, graduation, events, products and spaces. Book online · احجز جلستك أونلاين.">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500;700;800&family=Readex+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FBF6FF;--card:#FFFFFF;--ink:#2B1248;--pink:#FF4D8D;--sun:#FFC21A;--aqua:#12C2B0;--violet:#6C4DFF;--coral:#FF7A59;--line:#E6DAF5;--mut:#6A5584;--fd:'Baloo Bhaijaan 2',sans-serif;--fb:'Readex Pro',sans-serif;--sh:4px 4px 0 var(--ink)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:var(--fb);background:var(--bg);color:var(--ink);line-height:1.7;overflow-x:hidden}
+img{max-width:100%;display:block}
+button,input,select,textarea{font:inherit;color:inherit}button{cursor:pointer;border:0;background:none}
+:focus-visible{outline:3px solid var(--violet);outline-offset:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+h1,h2,h3,.logo{font-family:var(--fd)}
+
+/* nav */
+nav{position:sticky;top:0;z-index:30;background:rgba(251,246,255,.95);backdrop-filter:blur(8px);border-bottom:2.5px solid var(--ink)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:8px}
+.logo{font-weight:800;font-size:1.45rem;text-decoration:none;color:var(--ink);white-space:nowrap;line-height:1}
+.logo i{display:inline-block;width:.45em;height:.45em;background:var(--pink);border-radius:50%;margin-inline:.12em;border:2px solid var(--ink)}
+nav ul{display:flex;gap:2px;list-style:none;padding:0;align-items:center}
+nav ul a{display:block;padding:6px 12px;color:var(--ink);text-decoration:none;font-size:.93rem;border-radius:99px;font-weight:500}
+nav ul a:hover{background:var(--sun)}
+.lang{padding:5px 14px;border-radius:99px;border:2px solid var(--ink);background:var(--sun);font-weight:700;font-size:.9rem;box-shadow:2px 2px 0 var(--ink)}
+.lang:active{transform:translate(2px,2px);box-shadow:none}
+@media(max-width:700px){nav ul li.hd{display:none}}
+
+/* buttons */
+.btn{display:inline-block;padding:12px 26px;border-radius:99px;background:var(--pink);color:#fff;font-weight:600;text-decoration:none;border:2.5px solid var(--ink);box-shadow:var(--sh);transition:transform .15s,box-shadow .15s;cursor:pointer;font-size:1rem}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+.btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}
+.btn.o{background:var(--card);color:var(--ink)}.btn.wa{background:#25D366;color:var(--ink)}.btn.sun{background:var(--sun);color:var(--ink)}
+
+/* hero */
+.hero{padding:40px 0 64px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:var(--sun);inset-block-start:-160px;inset-inline-end:-140px;opacity:.55}
+.hero::after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:var(--aqua);inset-block-end:-120px;inset-inline-start:-80px;opacity:.35}
+.hero .wrap{display:grid;gap:34px;position:relative;z-index:1}
+@media(min-width:860px){.hero .wrap{grid-template-columns:1.05fr 1fr;align-items:center}}
+.hero h1{font-weight:800;font-size:clamp(3.6rem,15vw,7rem);line-height:.92}
+[dir=ltr] .hero h1{letter-spacing:-.025em}
+.hero h1 .a{display:block;color:var(--pink);-webkit-text-stroke:0;position:relative;width:max-content;max-width:100%}
+.hero h1 .a::after{content:"";position:absolute;inset-inline:0;bottom:-.06em;height:.16em;background:var(--sun);z-index:-1;border-radius:99px;transform:rotate(-1.5deg)}
+.hero p{max-width:44ch;color:var(--mut);margin:20px 0 26px;font-size:1.1rem}
+.acts{display:flex;gap:12px;flex-wrap:wrap}
+.sticker{position:absolute;z-index:2;background:var(--sun);border:2.5px solid var(--ink);border-radius:50%;width:92px;height:92px;display:grid;place-items:center;text-align:center;font-family:var(--fd);font-weight:800;font-size:.95rem;line-height:1.1;transform:rotate(-12deg);box-shadow:var(--sh);inset-block-start:-26px;inset-inline-start:-10px}
+.sheetw{position:relative}
+.sheet{background:var(--ink);padding:18px 12px 14px;border-radius:14px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;position:relative;box-shadow:8px 8px 0 var(--pink);transform:rotate(1.5deg)}
+.sheet::before,.sheet::after{content:"";position:absolute;inset-inline:0;height:8px;background:repeating-linear-gradient(90deg,transparent 0 10px,#fff4 10px 18px)}
+.sheet::before{top:5px}.sheet::after{bottom:4px}
+.fr{aspect-ratio:3/4;border-radius:5px;position:relative;overflow:hidden}
+.fr span{position:absolute;bottom:3px;inset-inline-start:5px;font-size:.62rem;color:#fff;font-weight:700;letter-spacing:.08em;direction:ltr}
+.fr.sel{outline:3px solid var(--sun);outline-offset:-3px}
+.fr.sel::after{content:"";position:absolute;inset:0;border:3px solid var(--sun);border-radius:50%;margin:12%}
+
+/* sections */
+section{padding:64px 0}
+h2{font-weight:800;font-size:clamp(2.1rem,8vw,3.4rem);line-height:1.1;margin-bottom:8px}
+h2 u{text-decoration:none;background:linear-gradient(transparent 62%,var(--sun) 62% 92%,transparent 92%)}
+.sub{color:var(--mut);max-width:54ch;margin-bottom:28px}
+.filters{display:flex;gap:8px;overflow-x:auto;padding:4px 4px 12px;margin:0 -4px 14px;scrollbar-width:none}.filters::-webkit-scrollbar{display:none}
+.fl{flex:none;padding:7px 18px;border-radius:99px;border:2.5px solid var(--ink);background:var(--card);font-weight:600;font-size:.93rem}
+.fl[aria-pressed=true]{background:var(--pink);color:#fff;box-shadow:2px 2px 0 var(--ink)}
+.mason{columns:2;column-gap:16px}
+@media(min-width:760px){.mason{columns:3;column-gap:22px}}
+.ph{break-inside:avoid;margin-bottom:18px;background:#fff;padding:9px 9px 0;border:2.5px solid var(--ink);border-radius:6px;display:block;width:100%;text-align:start;box-shadow:3px 3px 0 var(--ink);transition:transform .25s}
+.ph:nth-child(odd){transform:rotate(-1.4deg)}.ph:nth-child(even){transform:rotate(1.2deg)}
+.ph:hover{transform:rotate(0) translateY(-4px) scale(1.02);z-index:2;position:relative}
+.ph img{width:100%;height:auto;border-radius:2px}
+.ph .cap{display:block;padding:8px 2px 10px;font-weight:600;font-size:.88rem}
+.ph .cap small{color:var(--mut);font-weight:400}
+
+/* services */
+.svc{background:var(--aqua);border-block:2.5px solid var(--ink)}
+.svc .sub{color:#103B38}
+.sl{display:grid;gap:16px}
+@media(min-width:760px){.sl{grid-template-columns:1fr 1fr}}
+.s{background:var(--card);border:2.5px solid var(--ink);border-radius:20px;padding:20px 20px 18px;box-shadow:var(--sh);display:flex;flex-direction:column;gap:6px;position:relative;overflow:hidden}
+.s::before{content:"";position:absolute;inset-block-start:0;inset-inline:0;height:10px;background:var(--c)}
+.s h3{font-weight:800;font-size:1.55rem;line-height:1.2;margin-top:6px}
+.s p{color:var(--mut);font-size:.96rem}
+.s .meta{font-size:.84rem;color:var(--ink);display:flex;gap:6px;flex-wrap:wrap;margin-top:2px}
+.s .meta span{background:var(--bg);border:1.5px solid var(--line);padding:0 10px;border-radius:99px}
+.s .row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:auto;padding-top:10px}
+.s .pr{font-family:var(--fd);font-weight:800;font-size:1.55rem;line-height:1.1}
+.s .pr small{display:block;font-family:var(--fb);font-size:.74rem;color:var(--mut);font-weight:400}
+.s .bt{padding:8px 20px;border-radius:99px;border:2.5px solid var(--ink);background:var(--sun);font-weight:700;box-shadow:2px 2px 0 var(--ink)}
+.s .bt:hover{background:var(--pink);color:#fff}
+
+/* steps / about */
+.steps{display:grid;gap:16px;counter-reset:st}
+@media(min-width:760px){.steps{grid-template-columns:repeat(4,1fr)}}
+.st{border:2.5px solid var(--ink);border-radius:20px;padding:16px;background:var(--card);counter-increment:st;position:relative;box-shadow:3px 3px 0 var(--ink)}
+.st:nth-child(1){background:#FFE3EE}.st:nth-child(2){background:#FFF2C9}.st:nth-child(3){background:#D8F7F3}.st:nth-child(4){background:#E6E0FF}
+.st b{font-family:var(--fd);font-size:1.35rem;display:block;font-weight:800}
+.st b::before{content:counter(st);display:inline-grid;place-items:center;width:1.7em;height:1.7em;border-radius:50%;background:var(--ink);color:#fff;margin-inline-end:.4em;font-size:.85em}
+.st p{color:var(--mut);font-size:.95rem;margin-top:4px}
+.about{display:grid;gap:30px}
+@media(min-width:860px){.about{grid-template-columns:.8fr 1.2fr;align-items:center}}
+.pt{aspect-ratio:4/5;border-radius:50% 50% 24px 24px / 38% 38% 24px 24px;border:2.5px solid var(--ink);box-shadow:8px 8px 0 var(--sun);max-width:360px;width:100%}
+.about p{margin-bottom:12px;max-width:56ch}
+.hint{color:var(--mut);font-size:.88rem}
+
+/* booking */
+.book{background:var(--violet);color:#fff;border-block:2.5px solid var(--ink)}
+.book .sub{color:#E3DCFF}
+.form{background:var(--card);color:var(--ink);border:2.5px solid var(--ink);border-radius:22px;padding:24px;display:grid;gap:14px;max-width:660px;box-shadow:8px 8px 0 var(--ink)}
+.two{display:grid;gap:14px}@media(min-width:560px){.two{grid-template-columns:1fr 1fr}}
+.form label{font-weight:600;font-size:.92rem;display:block}
+.form input,.form select,.form textarea{width:100%;padding:11px 14px;border-radius:12px;border:2px solid var(--ink);background:#fff;margin-top:4px}
+.err{display:none;background:#FFD9D4;color:#8A1C10;padding:9px 12px;border-radius:12px;border:2px solid #8A1C10}
+.ok{display:none;text-align:center;padding:6px 0}
+.ok .no{font-family:var(--fd);font-weight:800;font-size:1.9rem;letter-spacing:.06em;display:inline-block;background:var(--sun);padding:0 20px;border-radius:12px;border:2.5px solid var(--ink);margin:8px 0;direction:ltr}
+details{border:2.5px solid var(--ink);border-radius:16px;padding:14px 18px;background:var(--card);margin-bottom:12px;box-shadow:3px 3px 0 var(--ink)}
+summary{font-weight:700;cursor:pointer}
+details p{color:var(--mut);margin-top:6px}
+footer{padding:34px 0 46px;text-align:center;color:var(--mut);font-size:.92rem}
+footer a{color:var(--ink);font-weight:600}
+
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgba(43,18,72,.95);z-index:50;display:none;align-items:center;justify-content:center;padding:16px}
+.lb.open{display:flex}
+.lb img{max-height:80vh;max-width:100%;border:4px solid #fff;border-radius:4px}
+.lb .c{position:absolute;bottom:18px;inset-inline:0;text-align:center;color:#fff;font-size:.95rem}
+.lb button{position:absolute;color:var(--ink);font-size:2rem;line-height:1;width:50px;height:50px;border-radius:50%;background:var(--sun);border:2.5px solid #fff}
+.lb .x{top:14px;right:14px}.lb .p{left:10px;top:50%}.lb .n{right:10px;top:50%}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="logo" href="#top" id="logo">Mai<i></i>Photography</a>
+<ul><li class="hd"><a href="#work" data-i="nWork"></a></li><li class="hd"><a href="#services" data-i="nServ"></a></li><li class="hd"><a href="#about" data-i="nAbout"></a></li><li class="hd"><a href="#faq" data-i="nFaq"></a></li><li><a class="btn sun" style="padding:6px 16px;font-size:.9rem;box-shadow:2px 2px 0 var(--ink)" href="#book" data-i="nBook"></a></li><li><button class="lang" id="lang" aria-label="Switch language / تغيير اللغة"></button></li></ul></div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+  <div>
+    <h1><span data-i="h1a"></span><span class="a" data-i="h1b"></span></h1>
+    <p data-i="lead"></p>
+    <div class="acts"><a class="btn" href="#book" data-i="nBook"></a><a class="btn o" href="#work" data-i="seeWork"></a></div>
+  </div>
+  <div class="sheetw"><div class="sticker" data-i="cheese"></div><div class="sheet" id="sheet" aria-hidden="true"></div></div>
+</div></header>
+
+<section id="work"><div class="wrap">
+  <h2 data-i="workH"></h2>
+  <p class="sub" data-i="workS"></p>
+  <div class="filters" id="filters" role="group"></div>
+  <div class="mason" id="mason"></div>
+</div></section>
+
+<section class="svc" id="services"><div class="wrap">
+  <h2 data-i="servH"></h2>
+  <p class="sub" data-i="servS"></p>
+  <div class="sl" id="sl"></div>
+</div></section>
+
+<section><div class="wrap">
+  <h2 data-i="howH"></h2>
+  <p class="sub" data-i="howS"></p>
+  <div class="steps" id="steps"></div>
+</div></section>
+
+<section id="about" style="background:#FFF1BF;border-block:2.5px solid var(--ink)"><div class="wrap about">
+  <div class="pt" id="aboutPh" role="img"></div>
+  <div>
+    <h2 data-i="aboutH"></h2>
+    <p data-i="about1"></p><p data-i="about2"></p>
+    <p class="hint" data-i="aboutHint"></p>
+  </div>
+</div></section>
+
+<section class="book" id="book"><div class="wrap">
+  <h2 data-i="bookH"></h2>
+  <p class="sub" data-i="bookS"></p>
+  <form class="form" id="bf" novalidate>
+    <div class="two"><div><label for="nm" data-i="fName"></label><input id="nm" autocomplete="name"></div>
+    <div><label for="ph" data-i="fPhone"></label><input id="ph" type="tel" inputmode="tel" autocomplete="tel" placeholder="059xxxxxxx" dir="ltr"></div></div>
+    <div class="two"><div><label for="sv" data-i="fSvc"></label><select id="sv"></select></div>
+    <div><label for="dt" data-i="fDate"></label><input id="dt" type="date"></div></div>
+    <div class="two"><div><label for="tm" data-i="fTime"></label><select id="tm"></select></div>
+    <div><label for="lc" data-i="fLoc"></label><input id="lc" data-ip="fLocPh"></div></div>
+    <div><label for="nt" data-i="fNote"></label><textarea id="nt" rows="3" data-ip="fNotePh"></textarea></div>
+    <div class="err" id="er" role="alert"></div>
+    <button class="btn wa" type="submit" data-i="send"></button>
+    <div class="ok" id="ok"><b style="font-size:1.25rem" data-i="saved"></b><br><span class="no" id="no"></span><p style="color:var(--mut)" data-i="savedNote"></p><a class="btn wa" id="wl" target="_blank" rel="noopener" href="#" data-i="openWa"></a></div>
+  </form>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <h2 data-i="faqH"></h2>
+  <div id="faqs"></div>
+</div></section>
+
+<footer><div class="wrap"><p>&copy; <span id="yr"></span> Mai Photography · <span data-i="foot"></span></p>
+<p style="margin-top:4px"><a id="igl" href="#" style="display:none" target="_blank" rel="noopener">Instagram</a></p></div></footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true"><button class="x" id="lx" aria-label="Close">&times;</button><button class="p" id="lp" aria-label="Previous">&lsaquo;</button><button class="n" id="ln" aria-label="Next">&rsaquo;</button><img id="li" alt=""><div class="c" id="lc2"></div></div>
+
+<script>
+/* ============ Edit here · عدّلي هون ============ */
+const CFG={WHATSAPP:'970599000000',INSTAGRAM:'',CURRENCY:'₪',PREFIX:'MP'};
+/* Photos: upload to a "photos" folder, then set src:'photos/name.jpg' · الصور: ارفعيها بمجلد photos وضعي المسار بـ src */
+const PHOTOS=[
+ {t:{en:'Wedding',ar:'عرس'},c:'weddings',src:'',r:1.5,h:340},{t:{en:'Portrait session',ar:'جلسة بورتريه'},c:'portraits',src:'',r:.8,h:320},
+ {t:{en:'Newborn',ar:'مولود جديد'},c:'kids',src:'',r:1,h:40},{t:{en:'Graduation day',ar:'يوم التخرج'},c:'graduation',src:'',r:.75,h:45},
+ {t:{en:'Party time',ar:'حفلة'},c:'events',src:'',r:1.4,h:280},{t:{en:'Product shot',ar:'تصوير منتج'},c:'products',src:'',r:1,h:170},
+ {t:{en:'Engagement',ar:'خطوبة'},c:'weddings',src:'',r:.8,h:335},{t:{en:'Family fun',ar:'لمّة عائلة'},c:'kids',src:'',r:1.3,h:25},
+ {t:{en:'Interior',ar:'تصوير داخلي'},c:'spaces',src:'',r:1.5,h:195},{t:{en:'Headshot',ar:'صورة شخصية'},c:'portraits',src:'',r:.8,h:15},
+ {t:{en:'Tasty food',ar:'تصوير أكل'},c:'products',src:'',r:1,h:50},{t:{en:'Birthday',ar:'عيد ميلاد'},c:'events',src:'',r:1.2,h:305}];
+const SERVICES=[
+ {n:{en:'Portraits',ar:'بورتريه'},d:{en:'Solo, couple or friends sessions, outdoors or in a studio corner.',ar:'جلسات فردية أو ثنائية أو مع الصديقات، بالخارج أو بزاوية استوديو.'},p:150,u:{en:'1 hour',ar:'ساعة'},m:{en:'20 edited photos',ar:'20 صورة معدّلة'}},
+ {n:{en:'Weddings',ar:'أعراس'},d:{en:'Full-day coverage from getting ready to the last dance.',ar:'تغطية يوم كامل من التجهيزات حتى آخر رقصة.'},p:2500,u:{en:'Full day',ar:'يوم كامل'},m:{en:'400+ edited photos',ar:'أكثر من 400 صورة'}},
+ {n:{en:'Engagement & Couples',ar:'خطوبة وكابلز'},d:{en:'A relaxed, fun session before the big day.',ar:'جلسة مريحة وممتعة قبل اليوم الكبير.'},p:350,u:{en:'1.5 hours',ar:'ساعة ونصف'},m:{en:'30 edited photos',ar:'30 صورة معدّلة'}},
+ {n:{en:'Newborn & Maternity',ar:'مواليد وحمل'},d:{en:'Gentle sessions at home or in a cozy setup.',ar:'جلسات هادئة بالبيت أو بتجهيز دافئ.'},p:300,u:{en:'2 hours',ar:'ساعتان'},m:{en:'25 edited photos',ar:'25 صورة معدّلة'}},
+ {n:{en:'Kids & Family',ar:'أطفال وعائلة'},d:{en:'Playful, natural photos with your little ones.',ar:'صور عفوية ومرحة مع الصغار.'},p:250,u:{en:'1 hour',ar:'ساعة'},m:{en:'25 edited photos',ar:'25 صورة معدّلة'}},
+ {n:{en:'Graduation',ar:'تخرج'},d:{en:'Cap, gown and everyone who cheered for you.',ar:'الروب والقبعة وكل الناس اللي فرحوا فيك.'},p:200,u:{en:'1 hour',ar:'ساعة'},m:{en:'25 edited photos',ar:'25 صورة معدّلة'}},
+ {n:{en:'Events & Parties',ar:'مناسبات وحفلات'},d:{en:'Birthdays, henna nights, engagements and gatherings.',ar:'أعياد ميلاد، ليالي حنة، خطوبات وتجمّعات.'},p:120,u:{en:'per hour',ar:'بالساعة'},m:{en:'Gallery within 1 week',ar:'الألبوم خلال أسبوع'}},
+ {n:{en:'Product & Food',ar:'منتجات وأكل'},d:{en:'Bright, clean photos for shops, menus and social media.',ar:'صور مشرقة ونظيفة للمحلات والمنيو والسوشال ميديا.'},p:200,u:{en:'Up to 10 items',ar:'حتى 10 منتجات'},m:{en:'Web-ready files',ar:'ملفات جاهزة للنشر'}},
+ {n:{en:'Real Estate & Interiors',ar:'عقارات وديكور'},d:{en:'Wide, bright photos for rentals, hotels and homes.',ar:'صور واسعة ومضيئة للإيجار والفنادق والبيوت.'},p:250,u:{en:'Up to 1 hour',ar:'حتى ساعة'},m:{en:'20 edited photos',ar:'20 صورة معدّلة'}},
+ {n:{en:'Corporate & Headshots',ar:'صور شركات وشخصية'},d:{en:'Team portraits and profile photos for LinkedIn and websites.',ar:'صور فريق وصور شخصية للينكدإن والمواقع.'},p:100,u:{en:'per person',ar:'للشخص'},m:{en:'3 edited photos each',ar:'3 صور معدّلة لكل شخص'}}];
+const COLORS=['var(--pink)','var(--sun)','var(--violet)','var(--coral)','var(--aqua)'];
+/* ================================================ */
+
+const T={
+en:{nWork:'Work',nServ:'Services',nAbout:'About',nFaq:'FAQ',nBook:'Book a session',h1a:'Mai',h1b:'Photography',
+ lead:'Colourful, warm portraits and all the fun moments in between. Weddings, newborns, graduations, parties, products and spaces, photographed with a big smile.',
+ seeWork:'See the work',cheese:'Say cheese!',workH:'Our happy <u>frames</u>',workS:'A look at recent sessions. Tap any photo to see it bigger.',
+ servH:'Services & <u>packages</u>',servS:'Every session includes light retouching and a private online gallery. Prices are starting points; the final quote depends on location and hours.',
+ from:'starting from',bookThis:'Book this',howH:'How it <u>works</u>',howS:'Four easy steps from message to photos.',
+ steps:[['Tell me','Pick a service and a date, and tell me what you have in mind.'],['Confirm','I reply on WhatsApp with availability, price and a few tips.'],['Shoot','We meet and have fun. I guide you, so no experience needed.'],['Receive','You get a private gallery with edited photos in a few days.']],
+ aboutH:"Hi, I'm <u>Mai</u>!",about1:'I photograph people and places the way they really feel: happy, natural and full of colour. I love sunny light, spontaneous laughs and the tiny details people forget to notice.',
+ about2:"Your wedding, your newborn's first week, your graduation or your new product: my goal is always the same, photos that make you smile every time you see them.",aboutHint:'Replace this text and the portrait with your own story and photo.',
+ bookH:'Book a <u>session</u>',bookS:'Send your request and it arrives on WhatsApp with a reference number. I will confirm the date and details with you.',
+ fName:'Full name',fPhone:'Phone number',fSvc:'Service',fDate:'Preferred date',fTime:'Preferred time',fLoc:'Location (city or venue)',fLocPh:'e.g. Nablus, studio, outdoors',fNote:'Tell me more (optional)',fNotePh:'Number of people, ideas, inspiration...',
+ times:['Morning','Afternoon','Golden hour (sunset)','Evening','Flexible'],send:'Send request on WhatsApp',saved:'Request saved',savedNote:'If WhatsApp did not open, tap the button and send the message.',openWa:'Open WhatsApp',
+ err:'Please enter your name, a valid phone number and a preferred date.',faqH:'Good <u>questions</u>',
+ faq:[['How far in advance should I book?','For weddings, 2 to 3 months ahead is best. For portraits, newborns and events, a couple of weeks is usually fine.'],['When do I get my photos?','Small sessions within 3 to 5 days. Weddings and large events within 2 to 3 weeks.'],['Can we shoot outdoors or at my home?','Yes! At your venue, outdoors, or in a studio corner. Travel outside the city may add a fee.'],['Do you offer prints and albums?','Yes, prints, framed photos and wedding albums can be added to any package.'],['How do I pay?','A small deposit confirms your date and the rest is paid on the day. Details are shared on WhatsApp.']],
+ foot:'Photos, prices and text are placeholders until replaced.',all:'All',
+ cats:{weddings:'Weddings',portraits:'Portraits',kids:'Kids & Family',graduation:'Graduation',events:'Events',products:'Products',spaces:'Spaces'},
+ wa:{title:'New booking request — Mai Photography',ref:'Ref',name:'Name',phone:'Phone',svc:'Service',date:'Date',time:'Time',loc:'Location',note:'Notes',from:'from',ns:'Not specified'},langBtn:'عربي',title:'Mai Photography | Portraits, Weddings, Events & More'},
+ar:{nWork:'الأعمال',nServ:'الخدمات',nAbout:'من أنا',nFaq:'أسئلة',nBook:'احجز جلستك',h1a:'مي',h1b:'فوتوغرافي',
+ lead:'صور مليانة ألوان وفرح وتفاصيل حلوة بين اللحظات. أعراس، مواليد، تخرج، حفلات، منتجات وأماكن... كلها بابتسامة كبيرة.',
+ seeWork:'شوف الأعمال',cheese:'قولوا تشيز!',workH:'لقطاتنا <u>الحلوة</u>',workS:'نظرة على آخر الجلسات. اضغط على أي صورة لتراها أكبر.',
+ servH:'الخدمات <u>والباقات</u>',servS:'كل جلسة فيها تعديل خفيف وألبوم خاص أونلاين. الأسعار تبدأ من الرقم المكتوب، والسعر النهائي حسب المكان والمدة.',
+ from:'تبدأ من',bookThis:'احجز',howH:'كيف <u>نشتغل</u>',howS:'أربع خطوات سهلة من الرسالة للصور.',
+ steps:[['راسلني','اختر الخدمة والتاريخ وقلّي شو في بالك.'],['نأكد','برد عليك على واتساب بالتوفّر والسعر ونصائح بسيطة.'],['نصوّر','منلتقي ونستمتع. أنا برشدك، فما بدك خبرة.'],['تستلم','بتوصلك صورك المعدّلة بألبوم خاص خلال أيام.']],
+ aboutH:'أهلاً، أنا <u>مي</u>!',about1:'بصوّر الناس والأماكن زي ما هي بالحقيقة: سعيدة وطبيعية ومليانة ألوان. بحب ضوء الشمس والضحكات العفوية والتفاصيل الصغيرة اللي الناس بتنساها.',
+ about2:'عرسك، أول أسبوع لمولودك، تخرجك أو منتجك الجديد: هدفي دايماً واحد، صور بتخليك تبتسم كل ما شفتها.',aboutHint:'بدّلي هذا النص والصورة بقصتك وصورتك.',
+ bookH:'احجز <u>جلستك</u>',bookS:'أرسل طلبك ويوصلني على واتساب مع رقم مرجعي. وبأكد معك التاريخ والتفاصيل.',
+ fName:'الاسم الكامل',fPhone:'رقم الجوال',fSvc:'الخدمة',fDate:'التاريخ المفضل',fTime:'الوقت المفضل',fLoc:'المكان (مدينة أو قاعة)',fLocPh:'مثال: نابلس، استوديو، بالخارج',fNote:'احكيلي أكثر (اختياري)',fNotePh:'عدد الأشخاص، أفكار، صور ملهمة...',
+ times:['صباحاً','بعد الظهر','وقت الغروب','مساءً','مرن'],send:'أرسل الطلب على واتساب',saved:'تم حفظ الطلب',savedNote:'إذا ما انفتح واتساب، اضغط الزر وأرسل الرسالة.',openWa:'فتح واتساب',
+ err:'اكتب الاسم ورقم جوال صحيح وتاريخاً مفضلاً.',faqH:'أسئلة <u>حلوة</u>',
+ faq:[['قديش قبل الموعد لازم أحجز؟','للأعراس الأفضل قبل شهرين أو ثلاثة. للبورتريه والمواليد والمناسبات يكفي غالباً أسبوعين.'],['متى بستلم صوري؟','الجلسات الصغيرة خلال 3 إلى 5 أيام. الأعراس والمناسبات الكبيرة خلال 2 إلى 3 أسابيع.'],['فينا نصوّر بالخارج أو ببيتي؟','أكيد! عندك بالبيت أو بالطبيعة أو بزاوية استوديو. التنقل خارج المدينة ممكن يضيف رسوم.'],['في طباعة وألبومات؟','أيوه، طباعة وإطارات وألبومات أعراس تنضاف لأي باقة.'],['كيف الدفع؟','عربون بسيط بثبّت الموعد والباقي يوم الجلسة. التفاصيل على واتساب.']],
+ foot:'الصور والأسعار والنصوص تجريبية لحد ما تتبدل.',all:'الكل',
+ cats:{weddings:'أعراس',portraits:'بورتريه',kids:'أطفال وعائلة',graduation:'تخرج',events:'مناسبات',products:'منتجات',spaces:'أماكن'},
+ wa:{title:'طلب حجز جديد — مي فوتوغرافي',ref:'الرقم',name:'الاسم',phone:'الجوال',svc:'الخدمة',date:'التاريخ',time:'الوقت',loc:'المكان',note:'ملاحظات',from:'تبدأ من',ns:'غير محدد'},langBtn:'EN',title:'مي فوتوغرافي | تصوير أعراس ومناسبات وبورتريه'}};
+
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let saved=null;try{saved=localStorage.getItem('mai_lang')}catch(e){}
+let lang=saved||((navigator.language||'').toLowerCase().startsWith('ar')?'ar':'en');
+const tx=()=>T[lang], L=o=>o[lang];
+function ph(h,r){
+  const w=600,hh=Math.round(w/r),m=Math.min(w,hh);
+  const svg=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${hh}"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="hsl(${h},95%,68%)"/><stop offset="1" stop-color="hsl(${(h+45)%360},90%,55%)"/></linearGradient></defs><rect width="${w}" height="${hh}" fill="url(#g)"/><circle cx="${w*.8}" cy="${hh*.2}" r="${m*.1}" fill="#fff" fill-opacity=".35"/><g transform="translate(${w/2} ${hh/2})" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="4"><circle r="${m*.17}"/><circle r="${m*.07}"/>${[0,60,120,180,240,300].map(a=>`<line x1="0" y1="${-m*.07}" x2="0" y2="${-m*.17}" transform="rotate(${a})"/>`).join('')}</g></svg>`;
+  return 'data:image/svg+xml;utf8,'+encodeURIComponent(svg);
+}
+PHOTOS.forEach(p=>p.img=p.src||ph(p.h,p.r));
+$('#sheet').innerHTML=[0,1,2,3,4,5,6,7,9].map((i,k)=>`<div class="fr${k===4?' sel':''}" style="background:url('${PHOTOS[i].img}') center/cover"><span>${String(k+1).padStart(2,'0')}</span></div>`).join('');
+$('#aboutPh').style.background=`url('${ph(335,.8)}') center/cover`;
+let cat='all',shown=[],selSvc=0,selTime=0;
+function gal(){
+  const cs=['all',...new Set(PHOTOS.map(p=>p.c))];
+  $('#filters').innerHTML=cs.map(c=>`<button class="fl" data-c="${c}" aria-pressed="${c===cat}">${esc(c==='all'?tx().all:tx().cats[c])}</button>`).join('');
+  shown=PHOTOS.filter(p=>cat==='all'||p.c===cat);
+  $('#mason').innerHTML=shown.map((p,i)=>`<button class="ph" data-i="${i}" aria-label="${esc(L(p.t))}"><img src="${esc(p.img)}" alt="${esc(L(p.t))}" loading="lazy"><span class="cap">${esc(L(p.t))} <small>· ${esc(tx().cats[p.c])}</small></span></button>`).join('');
+}
+function svc(){
+  $('#sl').innerHTML=SERVICES.map((s,i)=>`<article class="s" style="--c:${COLORS[i%COLORS.length]}"><h3>${esc(L(s.n))}</h3><p>${esc(L(s.d))}</p><div class="meta"><span>${esc(L(s.u))}</span><span>${esc(L(s.m))}</span></div><div class="row"><div class="pr">${CFG.CURRENCY}${s.p.toLocaleString('en-US')}<small>${tx().from}</small></div><button class="bt" data-b="${i}">${tx().bookThis}</button></div></article>`).join('');
+  $('#sv').innerHTML=SERVICES.map((s,i)=>`<option ${i===selSvc?'selected':''}>${esc(L(s.n))}</option>`).join('');
+  $('#tm').innerHTML=tx().times.map((s,i)=>`<option ${i===selTime?'selected':''}>${esc(s)}</option>`).join('');
+}
+function setLang(l){
+  lang=l;try{localStorage.setItem('mai_lang',l)}catch(e){}
+  const d=document.documentElement;d.lang=l;d.dir=l==='ar'?'rtl':'ltr';document.title=tx().title;
+  $$('[data-i]').forEach(e=>{e.innerHTML=tx()[e.dataset.i]});
+  $$('[data-ip]').forEach(e=>e.placeholder=tx()[e.dataset.ip]);
+  $('#lang').textContent=tx().langBtn;
+  $('#logo').innerHTML=l==='ar'?'مي<i></i>فوتوغرافي':'Mai<i></i>Photography';
+  $('#steps').innerHTML=tx().steps.map(s=>`<div class="st"><b>${esc(s[0])}</b><p>${esc(s[1])}</p></div>`).join('');
+  $('#faqs').innerHTML=tx().faq.map(f=>`<details><summary>${esc(f[0])}</summary><p>${esc(f[1])}</p></details>`).join('');
+  $('#aboutPh').setAttribute('aria-label',l==='ar'?'صورة مي (مؤقتة)':'Portrait of Mai (placeholder)');
+  gal();svc();
+  if(CFG.INSTAGRAM){const a=$('#igl');a.href=CFG.INSTAGRAM;a.style.display='inline'}
+}
+$('#lang').onclick=()=>setLang(lang==='ar'?'en':'ar');
+$('#sv').onchange=e=>selSvc=e.target.selectedIndex;$('#tm').onchange=e=>selTime=e.target.selectedIndex;
+$('#filters').onclick=e=>{const b=e.target.closest('[data-c]');if(b){cat=b.dataset.c;gal()}};
+$('#sl').onclick=e=>{const b=e.target.closest('[data-b]');if(!b)return;selSvc=+b.dataset.b;$('#sv').selectedIndex=selSvc;$('#book').scrollIntoView({behavior:'smooth'})};
+/* lightbox */
+let li=0;const lb=$('#lb');
+function show(i){li=(i+shown.length)%shown.length;const p=shown[li];$('#li').src=p.img;$('#li').alt=L(p.t);$('#lc2').textContent=L(p.t)+' · '+tx().cats[p.c];lb.classList.add('open')}
+$('#mason').onclick=e=>{const b=e.target.closest('[data-i]');if(b)show(+b.dataset.i)};
+$('#lx').onclick=()=>lb.classList.remove('open');$('#lp').onclick=()=>show(li-1);$('#ln').onclick=()=>show(li+1);
+lb.onclick=e=>{if(e.target===lb)lb.classList.remove('open')};
+document.onkeydown=e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')lb.classList.remove('open');if(e.key==='ArrowRight')show(li+1);if(e.key==='ArrowLeft')show(li-1)};
+/* booking */
+const now=new Date();now.setMinutes(now.getMinutes()-now.getTimezoneOffset());$('#dt').min=now.toISOString().slice(0,10);$('#yr').textContent=new Date().getFullYear();
+$('#bf').onsubmit=e=>{
+  e.preventDefault();
+  const n=$('#nm').value.trim(),p=$('#ph').value.trim(),er=$('#er');
+  if(!n||!/^[0-9+\s-]{9,15}$/.test(p)||!$('#dt').value){er.style.display='block';er.textContent=tx().err;return}
+  er.style.display='none';
+  const d=new Date(),no=CFG.PREFIX+'-'+String(d.getFullYear()).slice(2)+String(d.getMonth()+1).padStart(2,'0')+String(d.getDate()).padStart(2,'0')+'-'+Math.floor(1000+Math.random()*9000);
+  const s=SERVICES[selSvc],w=tx().wa;
+  const t=`${w.title}\n${w.ref}: ${no}\n\n${w.name}: ${n}\n${w.phone}: ${p}\n${w.svc}: ${L(s.n)} (${w.from} ${CFG.CURRENCY}${s.p})\n${w.date}: ${$('#dt').value}\n${w.time}: ${tx().times[selTime]}\n${w.loc}: ${$('#lc').value.trim()||w.ns}${$('#nt').value.trim()?`\n${w.note}: ${$('#nt').value.trim()}`:''}`;
+  const url='https://wa.me/'+CFG.WHATSAPP+'?text='+encodeURIComponent(t);
+  try{const A=JSON.parse(localStorage.getItem('mai_requests')||'[]');A.unshift({no,n,p,service:s.n.en,date:$('#dt').value,at:d.toISOString()});localStorage.setItem('mai_requests',JSON.stringify(A))}catch(x){}
+  $('#no').textContent=no;$('#wl').href=url;$('#ok').style.display='block';window.open(url,'_blank');
+};
+setLang(lang);
+</script>
+</body>
+</html>
